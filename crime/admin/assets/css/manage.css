@@ -1,0 +1,177 @@
+/* ==============================
+   Global Theme
+   ============================== */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #121212; /* dark background */
+  color: #eaeaea;
+}
+
+/* ==============================
+   Header
+   ============================== */
+.main-header {
+  background: #1c1f26;
+  border-bottom: 3px solid #f1c40f;
+  color: #f1c40f;
+  padding: 15px 30px;
+}
+.main-header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav a {
+  color: #bbb;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.main-nav a:hover {
+  color: #f1c40f;
+  text-decoration: underline;
+}
+
+/* ==============================
+   Filters Section
+   ============================== */
+.filters {
+  padding: 20px 30px;
+  background: #1e1e2f;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: center;
+}
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #f1c40f;
+}
+.form-group select,
+.form-group input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #2a2d36;
+  color: #eaeaea;
+  font-size: 0.95em;
+}
+.form-group select:focus,
+.form-group input:focus {
+  outline: none;
+  border-color: #f1c40f;
+}
+
+.btn-filter {
+  height: 30px;
+  background: #f1c40f;
+  color: #121212;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-filter:hover {
+  background: #d4ac0d;
+}
+
+/* ==============================
+   Crime Cards
+   ============================== */
+.crime-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.crime-card {
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 6px solid #f1c40f;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+.crime-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+}
+.crime-card h3 {
+  color: #f1c40f;
+  margin-top: 0;
+}
+
+/* ==============================
+   Status Labels
+   ============================== */
+.status-pending {
+  color: #facc15; /* yellow */
+  font-weight: bold;
+}
+.status-in-progress {
+  color: #f97316; /* orange */
+  font-weight: bold;
+}
+.status-resolved {
+  color: #22c55e; /* green */
+  font-weight: bold;
+}
+
+/* ==============================
+   Action Buttons
+   ============================== */
+.crime-actions {
+  margin-top: 15px;
+}
+.crime-actions a {
+  margin-right: 10px;
+  padding: 7px 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-update { background: #f1c40f; color: #121212; }
+.btn-update:hover { background: #d4ac0d; }
+
+.btn-assign { background: #3b82f6; color: white; }
+.btn-assign:hover { background: #2563eb; }
+
+.btn-delete { background: #ef4444; color: white; }
+.btn-delete:hover { background: #b91c1c; }
+.quick-update {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 5px;
+}
+.quick-update select,
+.quick-update input[type="date"] {
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background: #2a2d36;
+  color: #fff;
+}
+.quick-update button {
+  padding: 6px 12px;
+  background: #f1c40f;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.quick-update button:hover {
+  background: #d4ac0d;
+}

@@ -1,0 +1,130 @@
+  body {
+      background: #121212;
+      color: #eee;
+      font-family: Arial, sans-serif;
+    }
+
+        .main-header {
+      font-size: 20px;
+      height: 100px;
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      background: rgb(18, 18, 18);
+      border-bottom: 2px solid #ff3b3b;
+      padding: 1em 2em;
+      display: flex;
+       justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+      z-index: 1000; transition: 0.3s ease;
+    }
+    .main-header h1 {
+       color: #ff3b3b; 
+       font-size: 1.6em; 
+       padding-left: 10px;
+      }
+    .main-nav { display: flex; gap: 1.5em; align-items: center; }  
+    .main-nav a { 
+      color: #eee; 
+      text-decoration: none; 
+      font-weight: 500;
+       transition: color 0.3s; }
+    .main-nav a:hover { 
+      color: #ff3b3b;
+     }
+    .main-nav a.active {
+      color: #ff3b3b;
+      font-weight: bold;
+      border-bottom: 2px solid #ff3b3b;
+      padding-bottom: 4px;
+    }
+
+    .report-container {
+      height: auto;
+      max-width: 700px;
+      margin: 6em auto;
+      background: rgba(18,18,18,0.95);
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(255,0,0,0.3);
+    }
+    .report-container h2 {
+      text-align: center;
+      color: #ff3b3b;
+      margin-bottom: 0;
+    }
+    form label {
+      display: block;
+      margin-top: 1em;
+      font-weight: bold;
+      color: #ff3b3b;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 0.8em;
+      margin-top: 0.5em;
+      border: none;
+      border-radius: 6px;
+      background: #1e1e1e;
+      color: #eee;
+      resize: none;
+    }
+    form textarea { height: 120px; }
+    .btn-submit {
+      display: block;
+      width: 100%;
+      margin-top: 1.5em;
+      padding: 1em;
+      background: #ff3b3b;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      animation: pulse 2s infinite;
+    }
+    .btn-submit:hover { background: #e60000; transform: scale(1.03); }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px rgba(255,0,0,0.3); }
+      50% { box-shadow: 0 0 25px rgba(255,0,0,0.6); }
+      100% { box-shadow: 0 0 10px rgba(255,0,0,0.3); }
+    }
+    .message {
+      text-align: center;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    .success { color: #4caf50; }
+    .error { color: #f44336; }
+    
+
+        .preview-box {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.preview-box h3 {
+  margin-bottom: 15px;
+}
+
+.preview-box p {
+  margin: 8px 0;
+}
+
+.preview-box .evidence-img {
+  display: block;
+  margin: 10px auto;
+  max-width: 300px;   /* limits photo size */
+  max-height: 300px;  /* keeps tall images in check */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  object-fit: contain; /* avoids stretching */
+  background: #fff;
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}

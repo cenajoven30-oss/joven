@@ -1,0 +1,147 @@
+/* Admin Login Styling */
+.admin-login-box {
+  max-width: 420px;
+  margin: 6em auto;
+  padding: 2.5em;
+  background: #0f1a2c;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.2);
+  border-top: 4px solid #ffd700;
+  color: #eee;
+}
+
+.report-filter {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.report-filter label {
+    font-weight: bold;
+}
+
+.report-filter select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.admin-title {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  color: #ffd700;
+  letter-spacing: 1px;
+}
+
+.admin-login-form label {
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  color: #ccc;
+  display: block;
+}
+
+.admin-login-form input {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1.2em;
+  background: #1f2a3d;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #eee;
+  transition: border 0.3s ease;
+}
+
+.admin-login-form input:focus {
+  border-color: #ffd700;
+  outline: none;
+}
+
+.admin-login-form button {
+  width: 100%;
+  padding: 0.9em;
+  font-size: 1em;
+  background: #ffd700;
+  color: #0f1a2c;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.admin-login-form button:hover {
+  background: #e6c200;
+}
+
+/* Stats Box Container */
+.stats-box {
+  max-width: 800px;
+  margin: 4em auto;
+  padding: 2.5em;
+  background: #121212;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.2);
+  color: #eee;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  color: #ff3b3b;
+  letter-spacing: 1px;
+}
+
+/* Stats Table */
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1f1f1f;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+}
+
+.stats-table th,
+.stats-table td {
+  padding: 1em;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.stats-table th {
+  background: #ff3b3b;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stats-table td {
+  color: #ccc;
+}
+
+.stats-table tr:hover td {
+  background: #292929;
+}
+
+/* Responsive Enhancements */
+@media screen and (max-width: 600px) {
+  .stats-box {
+    padding: 1.5em;
+  }
+
+  .stats-table th,
+  .stats-table td {
+    padding: 0.8em;
+    font-size: 0.95em;
+  }
+
+  .section-title {
+    font-size: 1.5em;
+  }
+}

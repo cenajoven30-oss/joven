@@ -1,0 +1,26 @@
+.dashboard {
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.report-table th, .report-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.status.pending { background: #ffeeba; color: #856404; }
+.status.progress { background: #bee5eb; color: #0c5460; }
+.status.resolved { background: #c3e6cb; color: #155724; }

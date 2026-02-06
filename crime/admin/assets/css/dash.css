@@ -1,0 +1,127 @@
+/* General Reset */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #121212; /* dark background */
+  color: #eaeaea;
+}
+
+/* Header */
+.main-header {
+  background: #1c1f26;
+  border-bottom: 3px solid #f1c40f; /* police yellow */
+  color: #f1c40f;
+  padding: 15px 30px;
+}
+.main-header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header h1 {
+  margin: 0;
+  font-size: 1.6em;
+  letter-spacing: 1px;
+}
+.main-nav a {
+  color: #eaeaea;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.main-nav a:hover {
+  color: #f1c40f;
+  text-decoration: underline;
+}
+
+
+/* Dashboard Layout */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  padding: 25px;
+}
+
+/* Cards */
+.card {
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 6px solid #f1c40f; /* crime scene marker */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+}
+.card h2 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #f1c40f;
+}
+.card p {
+  margin: 8px 0 0;
+  color: #bbb;
+}
+
+/* Chart Containers */
+.chart-card {
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+}
+.chart-card h3 {
+  margin-bottom: 15px;
+  color: #f1c40f;
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px;
+}
+
+/* Recent Reports Table */
+.recent-reports {
+  grid-column: span 2;
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+.recent-reports h2 {
+  color: #f1c40f;
+}
+.recent-reports table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+.recent-reports th, 
+.recent-reports td {
+  padding: 12px;
+  border-bottom: 1px solid #333;
+  text-align: left;
+}
+.recent-reports th {
+  background: #2c2f3a;
+  color: #f1c40f;
+}
+.recent-reports tr:hover {
+  background: #2a2d36;
+}
+
+/* Status Labels */
+.status-pending {
+  color: #facc15; /* yellow */
+  font-weight: bold;
+}
+.status-in-progress {
+  color: #f97316; /* orange */
+  font-weight: bold;
+}
+.status-resolved {
+  color: #22c55e; /* green */
+  font-weight: bold;
+}
